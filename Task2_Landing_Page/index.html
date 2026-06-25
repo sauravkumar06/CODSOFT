@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saurav Kumar | Landing Page</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+/* Navbar */
+
+header{
+    background:#222;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+}
+
+.logo{
+    color:white;
+}
+
+.logo h2{
+    font-size:28px;
+}
+
+.logo p{
+    font-size:12px;
+    color:#ccc;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:#4a7dff;
+}
+
+/* Hero Section */
+
+.hero{
+    min-height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.65),
+    rgba(0,0,0,0.65)),
+    url('image.png');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+}
+
+.hero-content{
+    color:white;
+    max-width:600px;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-content h3{
+    font-size:28px;
+    margin-bottom:20px;
+    color:#4a7dff;
+}
+
+.hero-content p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#4a7dff;
+    color:white;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#2d5ce0;
+}
+
+/* About Section */
+
+.about{
+    padding:100px 8%;
+    background:white;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:40px;
+    color:#222;
+}
+
+.about-container{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:50px;
+}
+
+.about-image{
+    flex:1;
+    min-width:280px;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:10px;
+}
+
+.about-text{
+    flex:1;
+    min-width:280px;
+}
+
+.about-text h3{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+/* Skills */
+
+.skills{
+    padding:100px 8%;
+    background:#f8f9fc;
+}
+
+.skill-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.skill-box{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.skill-box h3{
+    color:#4a7dff;
+    margin-bottom:10px;
+}
+
+/* Services */
+
+.services{
+    padding:100px 8%;
+    background:white;
+}
+
+.service-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.service-box{
+    padding:25px;
+    border-radius:10px;
+    background:#f8f9fc;
+    text-align:center;
+}
+
+.service-box h3{
+    color:#4a7dff;
+    margin-bottom:10px;
+}
+
+/* Contact */
+
+.contact{
+    padding:100px 8%;
+    background:#f8f9fc;
+    text-align:center;
+}
+
+.contact p{
+    font-size:18px;
+    margin:15px 0;
+}
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:15px;
+}
+
+.hero-content h1{
+    font-size:40px;
+}
+
+.hero-content h3{
+    font-size:22px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+
+<div class="logo">
+<h2>Online Portfolio</h2>
+<p>Future Engineer & Developer</p>
+</div>
+
+<ul>
+<li><a href="#home">HOME</a></li>
+<li><a href="#about">ABOUT</a></li>
+<li><a href="#skills">SKILLS</a></li>
+<li><a href="#services">SERVICES</a></li>
+<li><a href="#contact">CONTACT</a></li>
+</ul>
+
+</nav>
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>SAURAV KUMAR</h1>
+
+<h3>ECE Student | Future GATE Aspirant</h3>
+
+<p>
+Hi, I am Saurav Kumar, a B.Tech Electronics and Communication
+Engineering student passionate about technology, coding,
+electronics and innovation. I am continuously learning
+new skills and working towards building a successful
+engineering career.
+</p>
+
+<a href="#about" class="btn">Hire Me</a>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<div class="section-title">
+<h2>ABOUT ME</h2>
+</div>
+
+<div class="about-container">
+
+<div class="about-image">
+<img src="image.png" alt="Profile">
+</div>
+
+<div class="about-text">
+
+<h3>Who Am I?</h3>
+
+<p>
+I am currently pursuing B.Tech in Electronics and
+Communication Engineering at BIT Sindri.
+</p>
+
+<p>
+My interests include Communication Systems,
+Digital Electronics, Programming, Web Development,
+and Signal Processing.
+</p>
+
+<p>
+I aim to achieve excellence in GATE ECE and build
+a strong technical career through continuous learning,
+projects and practical experience.
+</p>
+
+<a href="#" class="btn">Download Resume</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="skills" id="skills">
+
+<div class="section-title">
+<h2>MY SKILLS</h2>
+</div>
+
+<div class="skill-container">
+
+<div class="skill-box">
+<h3>HTML</h3>
+<p>Building responsive websites.</p>
+</div>
+
+<div class="skill-box">
+<h3>CSS</h3>
+<p>Creating modern UI designs.</p>
+</div>
+
+<div class="skill-box">
+<h3>JavaScript</h3>
+<p>Interactive web applications.</p>
+</div>
+
+<div class="skill-box">
+<h3>C Programming</h3>
+<p>Problem solving and coding.</p>
+</div>
+
+<div class="skill-box">
+<h3>Electronics</h3>
+<p>ECE core concepts and circuits.</p>
+</div>
+
+<div class="skill-box">
+<h3>Communication Systems</h3>
+<p>Understanding modern communication.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="services" id="services">
+
+<div class="section-title">
+<h2>SERVICES</h2>
+</div>
+
+<div class="service-container">
+
+<div class="service-box">
+<h3>Web Design</h3>
+<p>Simple and responsive websites.</p>
+</div>
+
+<div class="service-box">
+<h3>Frontend Development</h3>
+<p>HTML, CSS and JavaScript projects.</p>
+</div>
+
+<div class="service-box">
+<h3>Technical Learning</h3>
+<p>Continuous skill development and projects.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<div class="section-title">
+<h2>CONTACT ME</h2>
+</div>
+
+<p>Email: sauravkumar050107@.com</p>
+
+<p>Phone: +91 7061095336</p>
+
+<button class="btn" onclick="showMessage()">
+Say Hello
+</button>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Saurav Kumar 
+</p>
+
+</footer>
+
+<script>
+function showMessage(){
+alert("Thank you for visiting my landing page!");
+}
+</script>
+
+</body>
+</html>
